@@ -38,7 +38,7 @@
     ]
   },
   "main": "./index.js",
-  "name": "tslint-etc",
+  "name": "@heathmont/tslint-etc",
   "optionalDependencies": {},
   "peerDependencies": {
     "tslint": "^5.0.0",

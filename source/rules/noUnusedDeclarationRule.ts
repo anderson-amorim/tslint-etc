@@ -370,7 +370,7 @@ export class Walker extends Lint.ProgramAwareRuleWalker {
     const { _associationsByIdentifier, _usageByIdentifier } = this;
     if (typeof name === "string") {
       _usageByIdentifier.forEach((value, key) => {
-        if (key.getText() === name) {
+        if (key && key.getText() === name) {
           _usageByIdentifier.set(key, value === "declared" ? "used" : "seen");
           const associatedNames = _associationsByIdentifier.get(key);
           if (associatedNames) {
